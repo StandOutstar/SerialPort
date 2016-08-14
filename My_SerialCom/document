@@ -1,0 +1,7 @@
+此方法也能获取端口列表
+//    const auto infos = QSerialPortInfo::availablePorts();//infos是一个List,遍历得用LIST的方法。
+//    for (const QSerialPortInfo &info : infos)
+//        ui->comboBox_2->addItem(info.portName());
+
+先尝试开一个串口线程，不行就在主线程内，用信号槽的方法
+2016/7/30/10:06 实现了时间实时显示，参考自博客
